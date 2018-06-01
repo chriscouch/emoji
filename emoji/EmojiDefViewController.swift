@@ -12,20 +12,17 @@ class EmojiDefViewController: UIViewController {
 
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var emojiDef: UILabel!
+    @IBOutlet weak var birthLabel: UILabel!
     
-    var emoji = ""
+   var emoji = Emoji("","","")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        emojiLabel.text = emoji
-        //["😬","😉","😎","😱","😤"]
-        if emoji == "😬" {
-            emojiDef.text = "Geez!"
-        }
-        if emoji == "😉" {
-            emojiDef.text = "Winky!"
-        }
+        emojiLabel.text = emoji.emojiGraphic
+        emojiDef.text = emoji.emojiName
+        birthLabel.text = emoji.birthYear
+        
     }
 
 

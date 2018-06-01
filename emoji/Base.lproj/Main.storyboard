@@ -64,6 +64,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzF-Kb-TKc">
+                                <rect key="frame" x="126.66666666666669" y="706" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -71,11 +77,14 @@
                             <constraint firstItem="XK4-Ks-jB5" firstAttribute="top" secondItem="ZyU-O0-NJ5" secondAttribute="top" constant="50" id="Cgv-Ck-nQL"/>
                             <constraint firstItem="hl4-cy-cUC" firstAttribute="leading" secondItem="ZyU-O0-NJ5" secondAttribute="leading" constant="10" id="HWh-af-j0G"/>
                             <constraint firstItem="ZyU-O0-NJ5" firstAttribute="trailing" secondItem="hl4-cy-cUC" secondAttribute="trailing" constant="10" id="ILK-rW-Hu6"/>
+                            <constraint firstItem="hl4-cy-cUC" firstAttribute="top" secondItem="DzF-Kb-TKc" secondAttribute="bottom" constant="20" id="TRo-lX-Grf"/>
+                            <constraint firstItem="DzF-Kb-TKc" firstAttribute="centerX" secondItem="x20-N8-b3e" secondAttribute="centerX" id="gTt-7i-a19"/>
                             <constraint firstItem="XK4-Ks-jB5" firstAttribute="centerX" secondItem="x20-N8-b3e" secondAttribute="centerX" id="x66-XF-OET"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZyU-O0-NJ5"/>
                     </view>
                     <connections>
+                        <outlet property="birthLabel" destination="DzF-Kb-TKc" id="0UT-JQ-wSO"/>
                         <outlet property="emojiDef" destination="hl4-cy-cUC" id="fKz-wt-scC"/>
                         <outlet property="emojiLabel" destination="XK4-Ks-jB5" id="Df6-kr-Ljk"/>
                     </connections>
